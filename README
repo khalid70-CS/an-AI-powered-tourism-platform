@@ -1,0 +1,309 @@
+# GreenPath – Eco-Travel Tourism Platform
+
+A front-end tourism web application designed to present travel destinations, packages, comparisons, booking information, and travel-related content through a structured and responsive web interface.
+
+This project was developed as a university-level software project with an **AI-assisted development workflow**, using AI tools to support implementation, debugging, code understanding, refinement, and iterative improvement.
+
+> **Important:** AI was used as a development assistant. The website itself does not claim to contain a proprietary AI model or AI backend.
+
+---
+
+## Project Overview
+
+GreenPath is a tourism-focused front-end web application that brings several travel-related functions together in one interface.
+
+The project focuses on building a practical multi-page website with reusable styling, JavaScript-based interactions, structured content, and a consistent user experience.
+
+The application includes pages for:
+
+* Tourism destinations
+* Travel packages
+* Package details
+* Booking
+* Destination/package comparison
+* Image gallery
+* Contact information
+* Main landing page
+
+---
+
+## Main Features
+
+### Tourism Interface
+
+* Tourism-focused landing page
+* Destination and travel package presentation
+* Structured travel information
+* Visual destination content
+
+### Package Exploration
+
+* Travel package listings
+* Package detail pages
+* Information organized for easier comparison
+* Tourism-oriented content presentation
+
+### Booking Interface
+
+* Front-end booking page
+* Structured form elements
+* User-oriented booking workflow
+
+### Comparison
+
+* Comparison interface for travel options
+* Structured presentation of different choices
+* JavaScript-supported interaction where applicable
+
+### Gallery
+
+* Image gallery for tourism content
+* Visual presentation of destinations and travel experiences
+
+### Responsive Front-End
+
+* Structured HTML pages
+* CSS-based layouts and styling
+* Responsive interface considerations
+* JavaScript for client-side interactions
+
+---
+
+## Technologies
+
+* HTML5
+* CSS3
+* JavaScript
+* Git
+* GitHub
+* AI-assisted development tools
+
+---
+
+## Project Structure
+
+```text
+GreenPath/
+│
+├── css/
+│   └── Stylesheets and interface styling
+│
+├── js/
+│   └── Client-side JavaScript
+│
+├── images/
+│   └── Tourism and interface images
+│
+├── index.html
+├── booking.html
+├── choice.html
+├── comparison.html
+├── contact.html
+├── gallery.html
+├── package-details.html
+└── ...
+```
+
+---
+
+# AI-Assisted Development
+
+A major part of this project was experimenting with **AI-assisted software development**.
+
+Instead of treating AI as a replacement for development work, it was used as a practical development assistant throughout different stages of the project.
+
+### AI was used to support:
+
+* Understanding front-end implementation approaches
+* Generating initial code ideas
+* Suggesting HTML/CSS/JavaScript implementations
+* Improving page structure
+* Debugging implementation problems
+* Explaining unfamiliar code
+* Refactoring repetitive code
+* Improving responsive behavior
+* Reviewing potential UI issues
+* Suggesting improvements to existing implementations
+* Iterating on the design and implementation
+
+The generated suggestions were reviewed, tested, modified, and integrated into the project as appropriate.
+
+### Development Workflow
+
+The general workflow was:
+
+```text
+Requirement
+    ↓
+AI-assisted exploration
+    ↓
+Initial implementation
+    ↓
+Review and understanding
+    ↓
+Testing
+    ↓
+Debugging / modification
+    ↓
+Final implementation
+```
+
+This workflow helped demonstrate how modern AI tools can be integrated into normal software development tasks while keeping human review and decision-making involved.
+
+---
+
+# Connection to AI Learning
+
+This project was also used as a practical context for applying concepts and practices learned through the:
+
+**Cisco – Introduction to Modern AI**
+
+The certificate provided an introduction to modern AI concepts and helped establish a foundation for understanding how AI is becoming part of modern technology and software-development workflows.
+
+The project provided an opportunity to apply that learning from a practical developer perspective by experimenting with AI-assisted development rather than simply completing an AI theory course.
+
+### Learning → Application
+
+| Learning                 | Practical Application                                |
+| ------------------------ | ---------------------------------------------------- |
+| Modern AI concepts       | Understanding the role of AI in software development |
+| AI-assisted workflows    | Using AI during implementation and debugging         |
+| Prompt-based interaction | Giving structured development instructions           |
+| AI output evaluation     | Reviewing and testing generated suggestions          |
+| Human-AI collaboration   | Combining AI assistance with developer decisions     |
+
+---
+
+# What I Learned
+
+Through this project, I gained practical experience with:
+
+* Building a multi-page front-end website
+* Structuring HTML documents
+* Organizing CSS and JavaScript files
+* Creating tourism-focused user interfaces
+* Working with client-side JavaScript
+* Building and modifying forms
+* Creating reusable page structures
+* Debugging front-end issues
+* Using Git and GitHub for project version control
+* Working with AI as a software-development assistant
+* Reviewing AI-generated code instead of blindly accepting it
+* Breaking development tasks into smaller instructions
+* Testing changes after AI-assisted implementation
+
+---
+
+# AI-Assisted Development: What I Did
+
+AI assistance was used as part of the development process, but the final implementation was reviewed and tested before being treated as part of the project.
+
+The development process involved:
+
+1. Defining the required page or feature.
+2. Using AI to explore possible implementations.
+3. Reviewing the generated code and explanations.
+4. Integrating suitable parts into the project.
+5. Testing the implementation.
+6. Identifying and correcting issues.
+7. Refining the final interface.
+
+This approach provided practical experience with **human-AI collaboration in software development**.
+
+---
+
+# Project Scope
+
+This is a **front-end university-level project**.
+
+The project focuses on:
+
+* User interface development
+* Client-side functionality
+* Web page structure
+* Responsive design
+* JavaScript interactions
+* AI-assisted development
+
+It does **not** represent a production tourism platform or a full AI backend system.
+
+The purpose is to demonstrate practical front-end development skills and the ability to use modern AI tools responsibly as part of the development workflow.
+
+---
+
+# Skills Demonstrated
+
+### Front-End Development
+
+* HTML5
+* CSS3
+* JavaScript
+* Multi-page website development
+* Forms and user interfaces
+* Responsive layout
+* Client-side interactions
+
+### Software Development
+
+* Debugging
+* Code organization
+* Iterative development
+* Problem solving
+* Git version control
+* GitHub repository management
+
+### AI-Assisted Development
+
+* AI-assisted coding
+* Prompt-based development
+* Code explanation
+* Debugging with AI assistance
+* Refactoring assistance
+* AI output evaluation
+* Human-AI development workflow
+
+---
+
+# Future Improvements
+
+Possible future improvements include:
+
+* Connecting the front-end to a real backend
+* Adding persistent user data
+* Adding authentication
+* Connecting booking forms to a database
+* Adding real tourism APIs
+* Improving accessibility
+* Adding automated testing
+* Introducing an actual AI-powered recommendation feature
+* Adding personalized destination recommendations using an AI service
+
+These improvements are outside the current project scope.
+
+---
+
+# Certificate
+
+**Cisco – Introduction to Modern AI**
+
+The certificate represents foundational learning in modern AI and supports the project's focus on understanding and experimenting with AI-assisted development workflows.
+
+---
+
+# Author
+
+**Khalid**
+
+Computer Science Student
+
+Saudi Arabia
+
+---
+
+## Project Purpose
+
+This project demonstrates the combination of:
+
+**Front-End Development + Git/GitHub + AI-Assisted Development**
+
+The main goal is to demonstrate the ability to build a structured web application while learning how modern AI tools can be incorporated into a practical software-development workflow.
