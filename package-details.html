@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الباقة - وكالة المسار الأخضر</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <nav class="app-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🌿 المسار الأخضر</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="choice.html">الاختيار</a></li>
+                <li><a href="package-details.html" class="active">التفاصيل</a></li>
+                <li><a href="booking.html">الحجز</a></li>
+                <li><a href="comparison.html">المقارنة</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="detail-main-wrapper">
+        <header class="detail-header-section">
+            <h1 class="detail-main-title" id="detail-main-title">تفاصيل الباقة السياحية البيئية</h1>
+            <p class="detail-subtitle" id="detail-subtitle">استكشف جمال الطبيعة المستدامة</p>
+        </header>
+
+        <section class="detail-package-card">
+            <div class="detail-image-container">
+                <img src="images/dest-1.jpg" alt="صورة الباقة" class="detail-hero-image" id="detail-hero-image">
+                <span class="detail-badge" id="detail-badge">الأكثر طلباً 🔥</span>
+            </div>
+
+            <div class="detail-content-area">
+                <h2 class="detail-package-name" id="detail-package-name">🌿 باقة</h2>
+                <p class="detail-description" id="detail-description"></p>
+
+                <div class="detail-specs-grid">
+                    <div class="detail-spec-item"><div class="detail-spec-icon">📍</div><div class="detail-spec-info"><h3>الوجهة</h3><p id="spec-destination"></p></div></div>
+                    <div class="detail-spec-item"><div class="detail-spec-icon">⏱️</div><div class="detail-spec-info"><h3>المدة</h3><p id="spec-duration"></p></div></div>
+                    <div class="detail-spec-item"><div class="detail-spec-icon">💰</div><div class="detail-spec-info"><h3>السعر</h3><p id="spec-price"></p></div></div>
+                    <div class="detail-spec-item"><div class="detail-spec-icon">🏨</div><div class="detail-spec-info"><h3>نوع الفندق</h3><p id="spec-hotel"></p></div></div>
+                    <div class="detail-spec-item"><div class="detail-spec-icon">🚌</div><div class="detail-spec-info"><h3>معلومات النقل</h3><p id="spec-transport"></p></div></div>
+                    <div class="detail-spec-item"><div class="detail-spec-icon">🧗</div><div class="detail-spec-info"><h3>الأنشطة المتضمنة</h3><p id="spec-activities"></p></div></div>
+                </div>
+
+                <div class="detail-toggle-container">
+                    <button id="detail-toggle-btn" class="detail-btn-secondary">👁️ إظهار جدول الأنشطة اليومي التفصيلي</button>
+                    <div id="detail-extra-content" class="detail-hidden-content">
+                        <div class="detail-itinerary-box">
+                            <h4>برنامج الرحلة اليومي:</h4>
+                            <ul id="detail-itinerary-list"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-action-area">
+                    <a href="booking.html" class="detail-btn-primary" id="detail-book-btn">احجز هذه الباقة الآن ✈️</a>
+                    <a href="choice.html" class="detail-btn-secondary" style="margin-right:1rem;">← العودة لجميع الباقات</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>جميع الحقوق محفوظة © 2026 وكالة المسار الأخضر للسياحة البيئية.</p>
+    </footer>
+</body>
+</html>

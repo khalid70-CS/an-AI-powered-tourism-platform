@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>احجز رحلتك - المسار الأخضر</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <nav class="app-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🌿 المسار الأخضر</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="choice.html">الاختيار</a></li>
+                <li><a href="package-details.html">التفاصيل</a></li>
+                <li><a href="booking.html" class="active">الحجز</a></li>
+                <li><a href="comparison.html">المقارنة</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container section-padding">
+        <section class="booking-header" style="text-align:center; margin-bottom: var(--margin);">
+            <h1>احجز رحلتك الآن 🎒</h1>
+            <p>املأ النموذج أدناه لحجز رحلتك البيئية المميزة واستمتع بالطبيعة بمسؤولية.</p>
+        </section>
+
+        <div id="success-message" class="success-message">
+            <h3>✅ تم إرسال طلب الحجز بنجاح!</h3>
+            <p>شكراً لاهتمامك بالسياحة المستدامة، سنتواصل معك قريباً عبر البريد الإلكتروني لتأكيد تفاصيل الحجز.</p>
+        </div>
+
+        <form id="booking-form" class="booking-form" novalidate>
+            <div class="form-group">
+                <label for="full-name">الاسم الكامل *</label>
+                <input type="text" id="full-name" placeholder="أدخل اسمك الثلاثي على الأقل">
+                <div class="error-message" id="error-name"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني *</label>
+                <input type="email" id="email" placeholder="example@email.com">
+                <div class="error-message" id="error-email"></div>
+            </div>
+            <div class="form-group">
+                <label for="phone">رقم الهاتف *</label>
+                <input type="tel" id="phone" placeholder="05XXXXXXXX أو +966XXXXXXXX">
+                <div class="error-message" id="error-phone"></div>
+            </div>
+            <div class="form-group">
+                <label for="destination">اختر الوجهة البيئية *</label>
+                <select id="destination">
+                    <option value="" disabled selected>-- اختر الوجهة من القائمة --</option>
+                    <option value="bahah">غابات الباحة (1,500 ر.س / للفرد)</option>
+                    <option value="jeddah">شواطئ جدة (2,200 ر.س / للفرد)</option>
+                    <option value="ahsa">واحة الأحساء (1,800 ر.س / للفرد)</option>
+                    <option value="abha">جبال أبها (3,000 ر.س / للفرد)</option>
+                    <option value="ula">صحراء العلا (2,800 ر.س / للفرد)</option>
+                </select>
+                <div class="error-message" id="error-destination"></div>
+            </div>
+            <div class="form-group">
+                <label for="travelers">عدد المسافرين *</label>
+                <input type="number" id="travelers" min="1" max="20" value="1">
+                <div class="error-message" id="error-travelers"></div>
+            </div>
+            <div class="form-group">
+                <label for="travel-date">تاريخ السفر *</label>
+                <input type="date" id="travel-date">
+                <div class="error-message" id="error-date"></div>
+            </div>
+
+            <div id="price-calculator" class="price-calculator">
+                <h4>الحساب المالي التقديري</h4>
+                <div class="total-price" id="total-price">0 ر.س</div>
+                <p id="price-details">(الرجاء تحديد الوجهة وعدد المسافرين لحساب السعر تلقائياً)</p>
+            </div>
+
+            <button type="submit" class="btn-submit">تأكيد وإرسال طلب الحجز ✈️</button>
+        </form>
+    </main>
+
+    <footer class="app-footer">
+        <p>جميع الحقوق محفوظة © 2026 وكالة المسار الأخضر للسياحة البيئية.</p>
+    </footer>
+</body>
+</html>

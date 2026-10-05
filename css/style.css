@@ -1,0 +1,534 @@
+/* ==========================================================================
+   المسار الأخضر — ملف التنسيقات الموحّد (Unified Style)
+   دمج: المتغيرات الأساسية + Navbar/Footer + الصفحات الستة (العضو 1-4)
+   ========================================================================== */
+
+/* ====== 1) المتغيرات الأساسية (4 ألوان نمطية) ====== */
+:root {
+    --color-primary: #2D6A4F;     /* الأخضر الداكن */
+    --color-secondary: #95D5B2;   /* الأخضر الفاتح */
+    --color-background: #FEFAE0;  /* الكريمي */
+    --color-text: #6B4226;        /* البني الدافئ */
+
+    --font-family: 'Segoe UI', Tahoma, 'Cairo', sans-serif;
+    --max-width: 1200px;
+    --padding: 20px;
+    --margin: 40px;
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+/* ====== 2) Reset عام ====== */
+* { box-sizing: border-box; }
+html, body {
+    margin: 0; padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+.container,
+.home-container,
+.choice-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding);
+}
+
+.section-padding { padding: var(--margin) 0; }
+
+/* عناوين أقسام عامة */
+.home-section-title,
+section h1 { color: var(--color-primary); }
+.home-title-divider {
+    width: 60px; height: 4px;
+    background: var(--color-primary);
+    margin: 8px auto var(--margin) auto;
+    border-radius: 4px;
+}
+.home-section-title { text-align: center; font-size: 28px; margin-bottom: 6px; }
+
+/* ====== 3) شريط التنقل الموحد ====== */
+.app-navbar,
+.header-nav,
+nav.nav-container {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 14px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.app-navbar .nav-container,
+.header-nav .nav-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.nav-logo {
+    color: var(--color-background);
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav-links, .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0; padding: 0;
+    flex-wrap: wrap;
+}
+.nav-links a,
+.nav-menu a,
+.nav-link {
+    color: var(--color-background);
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+.nav-links a:hover,
+.nav-menu a:hover,
+.nav-link:hover,
+.nav-links a.active,
+.nav-link.active,
+.nav-link.nav-active {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+/* عند استخدام nav بدون wrapper */
+nav.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* ====== 4) الفوتر الموحد ====== */
+.app-footer,
+.main-footer {
+    background-color: var(--color-text);
+    color: var(--color-background);
+    text-align: center;
+    padding: 25px var(--padding);
+    margin-top: var(--margin);
+    font-size: 14px;
+}
+.footer-content p { margin: 4px 0; }
+.footer-rights { opacity: 0.85; font-size: 12px; margin-top: 8px !important; }
+
+/* ====== 5) صفحة الرئيسية (Index) ====== */
+.home-hero {
+    position: relative;
+    min-height: 70vh;
+    background: linear-gradient(rgba(45,106,79,0.55), rgba(107,66,38,0.55)),
+        url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-background);
+    padding: 60px var(--padding);
+}
+.home-hero-content { max-width: 760px; }
+.home-hero-badge {
+    display: inline-block;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.home-hero-title { font-size: 42px; margin: 10px 0 14px; }
+.home-hero-subtitle { font-size: 18px; margin-bottom: 28px; }
+.home-hero-btn {
+    display: inline-block;
+    background: var(--color-background);
+    color: var(--color-primary);
+    padding: 14px 32px;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    transition: var(--transition);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+.home-hero-btn:hover { background: var(--color-secondary); transform: translateY(-2px); }
+
+.home-welcome, .home-packages, .home-why, .home-contact-info { padding: var(--margin) 0; }
+.home-welcome-text { max-width: 800px; margin: 0 auto; text-align: center; font-size: 17px; }
+
+.home-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+.home-package-card {
+    background: #fff;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(107,66,38,0.1);
+    transition: var(--transition);
+    display: flex; flex-direction: column;
+}
+.home-package-card:hover { transform: translateY(-6px); box-shadow: 0 10px 20px rgba(45,106,79,0.18); }
+.home-card-image-wrapper { height: 200px; overflow: hidden; }
+.home-card-img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+.home-package-card:hover .home-card-img { transform: scale(1.05); }
+.home-card-body { padding: 18px; text-align: center; }
+.home-card-title { color: var(--color-primary); margin: 0 0 8px; font-size: 20px; }
+.home-card-price { color: var(--color-text); font-weight: bold; margin: 0 0 12px; }
+.home-card-link { color: var(--color-primary); font-weight: bold; }
+.home-card-link:hover { color: var(--color-text); }
+
+.home-why-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+.home-feature-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 10px rgba(107,66,38,0.08);
+    transition: var(--transition);
+}
+.home-feature-item:hover { transform: translateY(-4px); }
+.home-feature-icon { font-size: 36px; display: block; margin-bottom: 12px; }
+.home-feature-title { color: var(--color-primary); margin: 8px 0; }
+.home-feature-desc { font-size: 14px; }
+
+.home-contact-wrapper { display: flex; justify-content: center; }
+.home-contact-card {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: var(--border-radius);
+    border-right: 4px solid var(--color-primary);
+    box-shadow: 0 3px 10px rgba(107,66,38,0.08);
+    max-width: 600px;
+}
+.home-contact-card p { margin: 8px 0; }
+
+/* ====== 6) صفحة الاختيار (Choice) ====== */
+.choice-page-wrapper { padding: var(--margin) 0; }
+.choice-header { text-align: center; margin-bottom: var(--margin); }
+.choice-main-title { color: var(--color-primary); font-size: 32px; margin: 0 0 8px; }
+.choice-main-subtitle { color: var(--color-text); font-size: 16px; }
+
+.choice-dropdown-section { margin-bottom: var(--margin); }
+.choice-dropdown-block {
+    display: flex; align-items: center; justify-content: center;
+    flex-wrap: wrap; gap: 12px;
+}
+.choice-select-label { font-weight: bold; color: var(--color-primary); }
+.choice-select-element {
+    padding: 10px 14px;
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    font-size: 15px;
+    background: #fff; color: var(--color-text);
+    cursor: pointer; min-width: 240px;
+}
+.choice-select-element:focus { outline: none; border-color: var(--color-primary); }
+.choice-msg-hidden { display: none; }
+.choice-msg-visible {
+    display: block;
+    margin: 12px auto 0;
+    max-width: 600px;
+    text-align: center;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 10px 14px;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+}
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+.choice-card {
+    background: #fff;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(107,66,38,0.1);
+    position: relative;
+    transition: var(--transition);
+    display: flex; flex-direction: column;
+}
+.choice-card:hover { transform: translateY(-5px); box-shadow: 0 10px 22px rgba(45,106,79,0.18); }
+.choice-card.choice-hide { display: none; }
+.choice-card-badge {
+    position: absolute; top: 12px; right: 12px;
+    background: var(--color-primary); color: var(--color-background);
+    padding: 5px 12px; border-radius: 20px;
+    font-size: 12px; font-weight: bold;
+}
+.choice-card-img { width: 100%; height: 200px; object-fit: cover; }
+.choice-card-content { padding: 18px; display: flex; flex-direction: column; flex: 1; }
+.choice-card-title { color: var(--color-primary); margin: 0 0 8px; font-size: 20px; }
+.choice-card-meta { display: flex; gap: 14px; font-size: 13px; color: var(--color-text); margin-bottom: 10px; flex-wrap: wrap; }
+.choice-card-text { font-size: 14px; margin: 0 0 16px; flex: 1; }
+.choice-card-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.choice-btn {
+    flex: 1; text-align: center;
+    padding: 10px 14px; border-radius: var(--border-radius);
+    font-weight: bold; font-size: 14px;
+    transition: var(--transition);
+}
+.choice-btn-primary { background: var(--color-primary); color: var(--color-background); }
+.choice-btn-primary:hover { background: var(--color-text); }
+.choice-btn-secondary {
+    background: transparent; color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+.choice-btn-secondary:hover { background: var(--color-primary); color: var(--color-background); }
+
+/* ====== 7) صفحة تفاصيل الباقة (Package Details) - عضو 2 ====== */
+.detail-main-wrapper {
+    max-width: var(--max-width);
+    margin: var(--margin) auto;
+    padding: var(--padding);
+}
+.detail-header-section { text-align: center; margin-bottom: var(--margin); }
+.detail-main-title { color: var(--color-primary); font-size: 32px; margin-bottom: 10px; }
+.detail-subtitle { color: var(--color-text); font-size: 18px; }
+.detail-package-card {
+    background: #fff;
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(107, 66, 38, 0.1);
+}
+.detail-image-container { position: relative; width: 100%; height: 400px; }
+.detail-hero-image { width: 100%; height: 100%; object-fit: cover; }
+.detail-badge {
+    position: absolute; top: 20px; right: 20px;
+    background: var(--color-primary); color: var(--color-background);
+    padding: 8px 16px; border-radius: var(--border-radius);
+    font-weight: bold; font-size: 14px;
+}
+.detail-content-area { padding: 30px; }
+.detail-package-name { color: var(--color-primary); font-size: 26px; margin-bottom: 15px; }
+.detail-description { color: var(--color-text); line-height: 1.8; font-size: 16px; margin-bottom: 30px; }
+.detail-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px; margin-bottom: 30px;
+}
+.detail-spec-item {
+    background: var(--color-background);
+    border-right: 4px solid var(--color-primary);
+    padding: 15px; border-radius: var(--border-radius);
+    display: flex; align-items: center; gap: 15px;
+    transition: var(--transition);
+}
+.detail-spec-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(45, 106, 79, 0.15);
+    background: #fff;
+    border-right-color: var(--color-secondary);
+}
+.detail-spec-icon { font-size: 28px; }
+.detail-spec-info h3 { color: var(--color-primary); font-size: 16px; margin: 0 0 5px; }
+.detail-spec-info p { color: var(--color-text); font-size: 14px; margin: 0; font-weight: 500; }
+.detail-toggle-container {
+    margin: 25px 0; padding: 15px 0;
+    border-top: 1px dashed var(--color-secondary);
+    border-bottom: 1px dashed var(--color-secondary);
+    text-align: center;
+}
+.detail-hidden-content { display: none; margin-top: 15px; animation: fadeIn 0.4s ease-in-out; }
+.detail-itinerary-box {
+    background: #fff;
+    border: 1px solid var(--color-secondary);
+    padding: 20px; border-radius: var(--border-radius);
+}
+.detail-itinerary-box h4 { color: var(--color-primary); margin: 0 0 10px; }
+.detail-itinerary-box ul { padding-right: 20px; margin: 0; }
+.detail-itinerary-box li { margin-bottom: 10px; line-height: 1.6; }
+.detail-btn-secondary {
+    background: transparent; color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    padding: 10px 20px; font-size: 14px; font-weight: bold;
+    border-radius: var(--border-radius); cursor: pointer;
+    transition: var(--transition);
+}
+.detail-btn-secondary:hover { background: var(--color-primary); color: var(--color-background); }
+.detail-action-area { text-align: center; margin-top: 30px; }
+.detail-btn-primary {
+    display: inline-block;
+    background: var(--color-primary); color: var(--color-background);
+    padding: 15px 40px; font-size: 18px; font-weight: bold;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    box-shadow: 0 4px 10px rgba(45,106,79,0.3);
+}
+.detail-btn-primary:hover { background: var(--color-secondary); color: var(--color-primary); transform: scale(1.03); }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ====== 8) صفحة الحجز (Booking) - عضو 4 ====== */
+.booking-form {
+    max-width: 650px; margin: 0 auto var(--margin) auto;
+    background: var(--color-background);
+    padding: 35px; border-radius: var(--border-radius);
+    border: 2px solid var(--color-secondary);
+    box-shadow: 0 4px 15px rgba(107, 66, 38, 0.1);
+}
+.form-group { margin-bottom: 22px; position: relative; }
+.form-group label {
+    display: block; font-weight: bold; margin-bottom: 8px;
+    color: var(--color-text);
+}
+.form-group input, .form-group select {
+    width: 100%; padding: 12px 15px;
+    border: 1px solid var(--color-secondary);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family); font-size: 15px;
+    color: var(--color-text); background: #fff;
+    transition: var(--transition);
+}
+.form-group input:focus, .form-group select:focus {
+    outline: none; border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(45,106,79,0.3);
+}
+.form-group input.invalid, .form-group select.invalid {
+    border-color: var(--color-text);
+    background: #fff9f5; border-width: 1.5px;
+}
+.error-message {
+    color: var(--color-text); font-size: 13px;
+    font-weight: bold; margin-top: 6px; display: none;
+}
+.price-calculator {
+    background: var(--color-secondary); padding: 20px;
+    border-radius: var(--border-radius); text-align: center;
+    margin: 25px 0; border: 1px dashed var(--color-primary);
+}
+.price-calculator h4 { margin: 0 0 10px; color: var(--color-text); font-size: 16px; }
+.price-calculator .total-price { font-size: 32px; font-weight: bold; color: var(--color-primary); margin-bottom: 5px; }
+.price-calculator p { margin: 0; font-size: 13px; color: var(--color-text); }
+.btn-submit {
+    width: 100%; padding: 14px;
+    background: var(--color-primary); color: var(--color-background);
+    border: none; border-radius: var(--border-radius);
+    font-size: 17px; font-weight: bold; cursor: pointer;
+    transition: var(--transition);
+}
+.btn-submit:hover { background: var(--color-secondary); color: var(--color-primary); }
+.success-message {
+    max-width: 650px; margin: 0 auto 25px auto;
+    background: var(--color-secondary); border: 2px solid var(--color-primary);
+    padding: 20px; border-radius: var(--border-radius);
+    text-align: center; color: var(--color-primary); display: none;
+}
+.success-message h3 { margin-top: 0; margin-bottom: 10px; }
+.success-message p { margin: 0; color: var(--color-text); }
+
+/* ====== 9) صفحة المقارنة (Comparison) - عضو 3 ====== */
+.compare-table {
+    width: 100%; border-collapse: collapse; margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(107,66,38,0.05);
+    border-radius: var(--border-radius); overflow: hidden;
+}
+.compare-table caption {
+    padding: 10px; font-weight: bold; color: var(--color-text);
+    font-size: 14px; text-align: right;
+}
+.compare-table th {
+    background: var(--color-primary); color: var(--color-background);
+    padding: 16px; font-weight: 600; text-align: right; font-size: 16px;
+}
+.compare-table td {
+    padding: 15px;
+    border-bottom: 2px solid rgba(149, 213, 178, 0.3);
+    color: var(--color-text); font-size: 15px; vertical-align: middle;
+    text-align: right;
+}
+.compare-table td.package-name { font-weight: bold; color: var(--color-primary); }
+.compare-table td.package-price { font-weight: bold; color: var(--color-text); }
+.compare-table tbody tr:nth-child(even) { background: rgba(149,213,178,0.15); }
+.compare-table tbody tr:hover { background: rgba(149,213,178,0.4); transition: var(--transition); }
+
+.btn {
+    display: inline-block;
+    background: var(--color-primary); color: var(--color-background);
+    padding: 12px 28px; border-radius: var(--border-radius);
+    font-weight: bold; transition: var(--transition);
+}
+.btn:hover { background: var(--color-text); }
+
+/* ====== 10) صفحة المعرض (Gallery) - عضو 3 ====== */
+.gallery-filters {
+    display: flex; justify-content: center; flex-wrap: wrap;
+    gap: 12px; margin-bottom: var(--margin);
+}
+.gallery-filters .filter-btn {
+    padding: 10px 20px;
+    font-family: var(--font-family); font-size: 15px; font-weight: bold;
+    cursor: pointer; border-radius: var(--border-radius);
+    transition: var(--transition);
+    background: var(--color-background); color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+.gallery-filters .filter-btn:hover,
+.gallery-filters .filter-btn.active {
+    background: var(--color-primary); color: var(--color-background);
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+.gallery-grid .gallery-item {
+    background: #fff; border-radius: var(--border-radius);
+    overflow: hidden; box-shadow: 0 4px 8px rgba(107,66,38,0.08);
+    transition: var(--transition); margin: 0;
+}
+.gallery-grid .gallery-item.hide { display: none; }
+.gallery-grid .gallery-item:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(45,106,79,0.2); }
+.gallery-grid .gallery-item img { width: 100%; height: 240px; object-fit: cover; transition: var(--transition); }
+.gallery-grid .gallery-item figcaption {
+    padding: 15px; text-align: center; font-size: 14px;
+    font-weight: 500; color: var(--color-text); background: #fff;
+    border-top: 1px solid rgba(149,213,178,0.2);
+}
+
+/* ====== 11) صفحة اتصل بنا (Contact) ====== */
+.contact-wrap {
+    max-width: 900px; margin: var(--margin) auto; padding: 0 var(--padding);
+    display: grid; grid-template-columns: 1fr 1fr; gap: 30px;
+}
+.contact-wrap .booking-form { margin: 0; }
+.contact-info-card {
+    background: #fff; padding: 25px;
+    border-radius: var(--border-radius);
+    border-right: 4px solid var(--color-primary);
+    box-shadow: 0 4px 12px rgba(107,66,38,0.08);
+}
+.contact-info-card h3 { color: var(--color-primary); margin-top: 0; }
+.contact-info-card p { margin: 10px 0; }
+@media (max-width: 720px) { .contact-wrap { grid-template-columns: 1fr; } }
+
+/* ====== 12) استجابة عامة ====== */
+@media (max-width: 700px) {
+    .home-hero-title { font-size: 30px; }
+    .detail-image-container { height: 260px; }
+    .nav-links, .nav-menu { gap: 10px; font-size: 14px; }
+}

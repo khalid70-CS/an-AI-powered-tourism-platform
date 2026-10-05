@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - المسار الأخضر</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <nav class="app-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🌿 المسار الأخضر</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="choice.html">الاختيار</a></li>
+                <li><a href="package-details.html">التفاصيل</a></li>
+                <li><a href="booking.html">الحجز</a></li>
+                <li><a href="comparison.html">المقارنة</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+                <li><a href="contact.html" class="active">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container section-padding">
+        <section style="text-align:center; margin-bottom: var(--margin);">
+            <h1>تواصل معنا 📞</h1>
+            <p>نحن سعداء بتلقي استفساراتك واقتراحاتك في أي وقت.</p>
+        </section>
+
+        <div id="contact-success" class="success-message">
+            <h3>✅ تم استلام رسالتك بنجاح!</h3>
+            <p>شكراً لتواصلك مع وكالة المسار الأخضر، سنعود إليك خلال 24 ساعة.</p>
+        </div>
+
+        <div class="contact-wrap">
+            <form id="contact-form" class="booking-form" novalidate>
+                <div class="form-group">
+                    <label for="c-name">الاسم الكامل *</label>
+                    <input type="text" id="c-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="c-email">البريد الإلكتروني *</label>
+                    <input type="email" id="c-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="c-subject">الموضوع *</label>
+                    <input type="text" id="c-subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="c-message">رسالتك *</label>
+                    <textarea id="c-message" rows="5" required
+                        style="width:100%; padding:12px 15px; border:1px solid var(--color-secondary); border-radius:var(--border-radius); font-family:var(--font-family); font-size:15px; color:var(--color-text); background:#fff;"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">إرسال الرسالة ✉️</button>
+            </form>
+
+            <aside class="contact-info-card">
+                <h3>معلومات الاتصال</h3>
+                <p>📍 <strong>العنوان:</strong> الباحة، المملكة العربية السعودية</p>
+                <p>📞 <strong>الهاتف:</strong> +966-17-123-4567</p>
+                <p>✉️ <strong>البريد:</strong> info@greenpath-travel.com</p>
+                <p>🕒 <strong>أوقات العمل:</strong> السبت - الخميس، 9:00 ص - 6:00 م</p>
+                <p>🌐 <strong>تابعنا:</strong> @GreenPathKSA</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>جميع الحقوق محفوظة © 2026 وكالة المسار الأخضر للسياحة البيئية.</p>
+    </footer>
+</body>
+</html>

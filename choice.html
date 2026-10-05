@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختر وجهتك - المسار الأخضر</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <nav class="app-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🌿 المسار الأخضر</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="choice.html" class="active">الاختيار</a></li>
+                <li><a href="package-details.html">التفاصيل</a></li>
+                <li><a href="booking.html">الحجز</a></li>
+                <li><a href="comparison.html">المقارنة</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="choice-page-wrapper">
+        <section class="choice-header">
+            <div class="choice-container">
+                <h1 class="choice-main-title">اختر وجهتك المفضلة 🌍</h1>
+                <p class="choice-main-subtitle">تصفح باقاتنا المتنوعة المستدامة، استخدم القائمة الذكية للفلترة الفورية للوجهة المحددة.</p>
+            </div>
+        </section>
+
+        <section class="choice-dropdown-section">
+            <div class="choice-container">
+                <div class="choice-dropdown-block">
+                    <label for="destination-select" class="choice-select-label">تصفية سريعة حسب الوجهة:</label>
+                    <select id="destination-select" class="choice-select-element">
+                        <option value="all">-- عرض جميع الوجهات --</option>
+                        <option value="باحة">غابات الباحة</option>
+                        <option value="جدة">شواطئ جدة</option>
+                        <option value="أحساء">واحة الأحساء</option>
+                        <option value="أبها">جبال أبها</option>
+                        <option value="علا">صحراء العلا</option>
+                    </select>
+                </div>
+                <div id="selection-message" class="choice-msg-hidden"></div>
+            </div>
+        </section>
+
+        <section class="choice-packages-catalog">
+            <div class="choice-container">
+                <div class="choice-grid" id="packages-catalog-grid">
+
+                    <article class="choice-card" data-destination="باحة">
+                        <div class="choice-card-badge">الأكثر برودة</div>
+                        <img src="images/dest-1.jpg" alt="غابات الباحة" class="choice-card-img">
+                        <div class="choice-card-content">
+                            <h3 class="choice-card-title">غابات الباحة البيئية</h3>
+                            <div class="choice-card-meta">
+                                <span>⏱️ المدة: 3 أيام</span>
+                                <span>💰 السعر: 1,500 ر.س</span>
+                            </div>
+                            <p class="choice-card-text">استمتع بمسارات المشي الجبلية الرائعة بين أشجار العرعر الكثيفة وضباب الجبال الساحر.</p>
+                            <div class="choice-card-actions">
+                                <a href="package-details.html?id=bahah" class="choice-btn choice-btn-secondary">عرض التفاصيل</a>
+                                <a href="booking.html" class="choice-btn choice-btn-primary">احجز الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="choice-card" data-destination="جدة">
+                        <div class="choice-card-badge">مغامرة بحرية</div>
+                        <img src="images/dest-2.jpg" alt="شواطئ جدة" class="choice-card-img">
+                        <div class="choice-card-content">
+                            <h3 class="choice-card-title">شواطئ جدة المستدامة</h3>
+                            <div class="choice-card-meta">
+                                <span>⏱️ المدة: 4 أيام</span>
+                                <span>💰 السعر: 2,200 ر.س</span>
+                            </div>
+                            <p class="choice-card-text">اكتشف الشعاب المرجانية البكر عبر رحلات غوص صديقة للبيئة مخصصة لحماية الحياة البحرية.</p>
+                            <div class="choice-card-actions">
+                                <a href="package-details.html?id=jeddah" class="choice-btn choice-btn-secondary">عرض التفاصيل</a>
+                                <a href="booking.html" class="choice-btn choice-btn-primary">احجز الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="choice-card" data-destination="أحساء">
+                        <div class="choice-card-badge">إرث ثقافي</div>
+                        <img src="images/dest-3.jpg" alt="واحة الأحساء" class="choice-card-img">
+                        <div class="choice-card-content">
+                            <h3 class="choice-card-title">واحة الأحساء الخضراء</h3>
+                            <div class="choice-card-meta">
+                                <span>⏱️ المدة: 3 أيام</span>
+                                <span>💰 السعر: 1,800 ر.س</span>
+                            </div>
+                            <p class="choice-card-text">تجول بين ملايين أشجار النخيل وتعرف على أنظمة الري التقليدية العريقة في أكبر واحات العالم.</p>
+                            <div class="choice-card-actions">
+                                <a href="package-details.html?id=ahsa" class="choice-btn choice-btn-secondary">عرض التفاصيل</a>
+                                <a href="booking.html" class="choice-btn choice-btn-primary">احجز الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="choice-card" data-destination="أبها">
+                        <div class="choice-card-badge">قمم جبلية</div>
+                        <img src="images/dest-4.jpg" alt="جبال أبها" class="choice-card-img">
+                        <div class="choice-card-content">
+                            <h3 class="choice-card-title">جبال أبها الشاهقة</h3>
+                            <div class="choice-card-meta">
+                                <span>⏱️ المدة: 5 أيام</span>
+                                <span>💰 السعر: 3,000 ر.س</span>
+                            </div>
+                            <p class="choice-card-text">تخييم بيئي فاخر فوق أعلى القمم الجبلية بالمملكة مع رصد النجوم والتعرف على الفلك المحلي.</p>
+                            <div class="choice-card-actions">
+                                <a href="package-details.html?id=abha" class="choice-btn choice-btn-secondary">عرض التفاصيل</a>
+                                <a href="booking.html" class="choice-btn choice-btn-primary">احجز الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="choice-card" data-destination="علا">
+                        <div class="choice-card-badge">تاريخ طبيعي</div>
+                        <img src="images/dest-5.jpg" alt="صحراء العلا" class="choice-card-img">
+                        <div class="choice-card-content">
+                            <h3 class="choice-card-title">صحراء العلا العريقة</h3>
+                            <div class="choice-card-meta">
+                                <span>⏱️ المدة: 4 أيام</span>
+                                <span>💰 السعر: 2,800 ر.س</span>
+                            </div>
+                            <p class="choice-card-text">مسارات وتشكيلات صخرية ساحرة مدمجة بزيارات للمواقع التاريخية بوعي واستدامة بيئية كاملة.</p>
+                            <div class="choice-card-actions">
+                                <a href="package-details.html?id=ula" class="choice-btn choice-btn-secondary">عرض التفاصيل</a>
+                                <a href="booking.html" class="choice-btn choice-btn-primary">احجز الآن</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>جميع الحقوق محفوظة © 2026 وكالة المسار الأخضر للسياحة البيئية.</p>
+    </footer>
+</body>
+</html>
